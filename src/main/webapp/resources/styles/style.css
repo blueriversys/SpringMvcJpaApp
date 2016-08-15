@@ -1,0 +1,120 @@
+body { background-color: #eee; font: helvetica; }
+#container { width: 700px; background-color: #fff; margin: 30px auto; padding: 30px; border-radius: 7px; box-shadow: 5px; }
+#container-large { width: 980px; background-color: #fff; margin: 20px auto; padding: 20px; border-radius: 7px; box-shadow: 5px; }
+.green { font-weight: bold; color: green; }
+.message { margin-bottom: 10px; }
+label {width:100px; display:inline-block;}
+form {line-height: 160%; }
+.hide { display: none; }
+#summation { font-size:18px; font-weight:bold; color:#174c68 }
+.number { background-color:#feffb0; font-weight:bold; text-align:right }
+.centered { text-align: center; font-family: verdana, sans-serif; font-size: 12px;}
+.right-just { text-align: right; width: 120px; }
+
+table { 
+	margin: 0 auto; /* this will center the table */ 
+	font-family: verdana, sans-serif;	
+	font-size: 12px;
+}  
+
+.centered-bg { 
+	background-color:#85E085; 
+	font-weight: 600; /* less than bold, more than normal */
+    font-family: verdana, sans-serif; 
+	font-size: 20px;
+	text-align: center; 
+	border-radius: 7px; 
+	width: 700px; 
+    margin-left: auto ;
+    margin-right: auto ;
+	color: green;
+}
+
+.centered-div {
+	width: 600px; 
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.toggler-title { 
+    font-family: verdana, sans-serif; 
+	font-size: 14px;
+	color: darkgray;
+	margin: 6px; 
+	text-align: center; 
+	background:lightgreen; 
+	cursor:pointer; 
+	width: 580px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+.toggler-body { 
+	color: gray;
+	margin: 10px; 
+	display:none; 
+}
+
+.success-msg-box {
+  background-color: rgba(0,170,0,0.7); width:400px; height:70px; margin-left: 280px; position:absolute;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-color: solid 2px rgba(0,0,0,1.0);
+  font: bold 20px Arial,Sans-Serif;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+
+.error-msg-box {
+  background-color: rgba(250,0,0,0.7); width:400px; height:70px; margin-left: 280px; position:absolute;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  border-color: solid 2px rgba(0,0,0,1.0);
+  font: bold 20px Arial,Sans-Serif;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+.proportional-img-div {
+	width: 460px; 
+	height: 360px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center; 
+	background-color: #E6F5E6;
+  	border-style: solid;
+  	border-width: 1px; 
+  	border-color: lightgray;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+.proportional-img {
+	width: auto; 
+	max-width: 460px;
+	max-height: 360px;
+}
+
+/* creates a vertical scrolling div with height 240 and automatic width */
+.vert-scroll {
+	height: 220px;	
+	overflow: auto;
+	background-color: #E6F5E6;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+  	border-style: solid;
+  	border-width: 1px; 
+  	border-color: lightgray;
+}
+
+ 

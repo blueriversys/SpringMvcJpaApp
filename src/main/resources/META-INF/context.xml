@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?> 
+  <Context> <Resource name="jdbc/TradeDataSource" auth="Container" type="javax.sql.DataSource" username="admin6byarua" password="nnxIfgAcev-6" driverClassName="org.postgresql.Driver" url="jdbc:postgresql://${env.OPENSHIFT_POSTGRESQL_DB_HOST}:${env.OPENSHIFT_POSTGRESQL_DB_PORT}/${env.OPENSHIFT_APP_NAME}" maxActive="20" maxIdle="10" /> </Context>

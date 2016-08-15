@@ -1,0 +1,43 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+     
+	<context:component-scan base-package="com.blueriver.*" />
+
+    <!-- Process annotations on registered beans like @Autowired... -->
+<!--      
+    <context:annotation-config/>
+-->
+ 
+    <!-- Exception Resolver that resolves exceptions through @ExceptionHandler methods -->
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver"/>
+<!--      
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="resources/pages/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+-->
+    <!-- This tag allows for mapping the DispatcherServlet to "/" -->
+<!--  
+	<mvc:default-servlet-handler/>
+ -->
+ 
+    <!--  These 2 lines below tell Tomcat to look for resources such as
+          images under the "resources" folder, which is under "webapp" 
+    -->
+      
+    <mvc:resources mapping="/resources/**" location="/resources/" />
+      
+    <!-- This tag registers the DefaultAnnotationHandlerMapping and
+         AnnotationMethodHandlerAdapter beans that are required for Spring MVC  -->
+    <mvc:annotation-driven/>
+ 
+</beans>
